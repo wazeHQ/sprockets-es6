@@ -91,5 +91,5 @@ module Sprockets
 
   append_path Babel::Transpiler.source_path
 
-  register_engine '.es6', ES6, mime_type: 'application/javascript'
+  register_engine '.es6', ES6, mime_type: 'application/javascript', silence_deprecation: true
 end
